@@ -1,0 +1,16 @@
+.user-btn {
+    border: none;
+    background-color: #f8f9fa;
+    color: #333; 
+    transition: background-color 0.3s;
+}
+.user-btn:hover {
+    background-color: #e2e6ea;
+}
+
+.text-logout {
+    color: #005555; 
+}
+.text-logout:hover {
+    color: #003737; 
+}

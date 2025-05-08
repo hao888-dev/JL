@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JapanLearn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../picture/JL.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/Ct.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav1.css">
+    <style>
+        .user-btn {
+            border: none;
+            background-color: #f8f9fa;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+        .user-btn:hover {
+            background-color: #e2e6ea;
+        }
+        .text-logout {
+            color: #005555;
+        }
+        .text-logout:hover {
+            color: #003737;
+        }
+        .combo-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .combo-card:hover {
+            transform: translateY(-5px);
+        }
+        .price-old {
+            text-decoration: line-through;
+            color: #6c757d;
+        }
+        .price-new {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .discount {
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img src="../picture/JL-removebg.png" alt="JL" width="70" height="70" class="me-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " href="../index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Kh.html">Khóa học</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="Ct.html">Chương trình</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Dt.html">Đề thi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Fc.html">Flashcards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="Bl.html">Blog</a>
+                </li>
+            </ul>
+            <div class="dropdown ms-auto">
+                <a class="btn user-btn dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../picture/user_icon_150670.png" alt="User" width="30" height="30" class="rounded-circle me-2">
+                    User
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            Thông báo 
+                            <div class="text-muted small" style="margin-top: 5px;">(Chưa có thông báo)</div>
+                        </a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Lịch học</a></li>
+                    <li><a class="dropdown-item" href="#">Trang cá nhân</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-danger" href="#">Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8" id="content">
+                <h1 class="fw-bold">Phần mềm luyện thi online</h1>
+                <p class="mt-3">
+                    Các phần mềm luyện thi JLPT, NAT-TEST, EJU online chất lượng cao của JapanLearn được thiết kế sát với
+                     định dạng đề thi thực tế, bám sát khung năng lực Nhật ngữ chuẩn quốc tế (tương đương CEFR từ A1 đến C2) 
+                     và giáo trình của các trường đại học hàng đầu tại Nhật Bản.
+                </p>
+                <p>
+                    Phần mềm luyện thi bao gồm các tính năng chuyên sâu và lộ trình học cá nhân hóa, giúp người học từng bước
+                     chinh phục các mốc điểm quan trọng. JapanLearn ứng dụng các công nghệ học tập tiên tiến như spaced-repetition
+                      để ôn tập từ vựng bằng flashcards, AI để chấm phát âm, chữa lỗi bài nói và viết theo tiêu chuẩn kỳ thi năng lực tiếng Nhật. 
+                </p>
+                      <p>
+                      Toàn bộ quá trình học tập được thống kê chi tiết theo ngày và theo từng dạng bài thi, giúp bạn dễ dàng
+                       theo dõi tiến độ và điều chỉnh phương pháp học một cách phù hợp.
+                </p>
+                <p>🎓 Bạn có thể học thử miễn phí trước khi quyết định đăng ký.
+
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="form-section">
+                    <h5 class="fw-bold text-center">Tư vấn lộ trình học</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Họ tên*</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label">Số điện thoại*</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">Khu vực học (thành phố/tỉnh)*</label>
+                            <input type="text" class="form-control" id="city" placeholder="" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Đăng ký tư vấn miễn phí</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="fw-bold mb-4">Combo đặc biệt - Tiếng Nhật</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="combo-card">
+                        <span class="badge bg-primary mb-2">JapanLearn</span>
+                        <h5 class="fw-bold">COMBO TIẾNG NHẬT N5-N4</h5>
+                        <p>Combo lộ trình tiếng Nhật cơ bản từ N5 đến N4 [Tặng tài liệu học]</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning">★★★★★</span>
+                            <span class="ms-2 text-muted small">(1,618) 98,671 Học viên</span>
+                        </div>
+                        <span class="badge bg-secondary mb-2">#Phần mềm online</span>
+                        <div>
+                            <span class="price-new">1,525,000đ</span>
+                            <span class="price-old ms-2">3,596,000đ</span>
+                            <span class="discount ms-2">-57%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="combo-card">
+                        <span class="badge bg-primary mb-2">JapanLearn</span>
+                        <h5 class="fw-bold">COMBO TIẾNG NHẬT N3-N2</h5>
+                        <p>Combo nâng cao tiếng Nhật từ N3 đến N2 kèm tài liệu thực hành [Tặng tài liệu]</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning">★★★★★</span>
+                            <span class="ms-2 text-muted small">(680) 107,333 Học viên</span>
+                        </div>
+                        <span class="badge bg-secondary mb-2">#Phần mềm online</span>
+                        <div>
+                            <span class="price-new">2,925,000đ</span>
+                            <span class="price-old ms-2">5,346,000đ</span>
+                            <span class="discount ms-2">-45%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="combo-card">
+                        <span class="badge bg-primary mb-2">JapanLearn</span>
+                        <h5 class="fw-bold">COMBO TIẾNG NHẬT N1</h5>
+                        <p>Combo chinh phục tiếng Nhật N1 kèm tài liệu thực hành [Tặng tài liệu]</p>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning">★★★★★</span>
+                            <span class="ms-2 text-muted small">(891) 123,668 Học viên</span>
+                        </div>
+                        <span class="badge bg-secondary mb-2">#Phần mềm online</span>
+                        <div>
+                            <span class="price-new">3,325,000đ</span>
+                            <span class="price-old ms-2">6,245,000đ</span>
+                            <span class="discount ms-2">-46%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
