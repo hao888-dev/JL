@@ -1,199 +1,127 @@
-.custom-link{
-    color: #000000; 
-    text-decoration: none; 
-    padding: 8px 16px; 
-    border-radius: 50px; 
+.user-btn {
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color 0.3s;
+}
+.user-btn:hover {
+    background-color: #e2e6ea;
+}
+.text-logout {
+    color: #005555;
+}
+.text-logout:hover {
+    color: #003737;
+}
+/* Styles for test cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-body {
+    padding: 15px;
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.tags {
+    margin-top: 10px;
+}
+.tag {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #6c757d;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+/* Styles for suggestion box */
+.suggestion-card {
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.suggestion-card h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0;
+}
+.suggestion-card p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+.custom-link {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 50px;
     transition: background-color 0.3s ease;
     font-weight: bold;
 }
 .custom-link:hover {
-    background-color: #0582c62e; 
-    
+    background-color: #0582c62e;
 }
-.custom-link.active{
-    background-color: #0582c642; 
+.custom-link.active {
+    background-color: #0582c642;
     color: #0096e0;
 }
 /* CSS cho button và hiệu ứng hover */
 .stats-btn {
-    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
-    border: 1px solid #007bff; /* Viền mặc định */
-    padding: 8px 16px; /* Khoảng cách trong */
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #007bff;
+    padding: 8px 16px;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(90deg, #f8f9fa, #ffffff);
+    border-radius: 8px;
+    color: #000000; /* Black text by default */
 }
-
 .stats-btn:hover {
-    background-color: #007bff; /* Màu nền khi hover */
-    color: #fff !important; /* Màu chữ trắng khi hover */
-    transform: scale(1.02); /* Phóng to nhẹ khi hover */
-    border-color: #0056b3; /* Đổi màu viền khi hover */
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #ffffff !important; /* White text on hover */
+    transform: scale(1.02);
+    border-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
 }
-
 .stats-btn i, .stats-btn span {
-    transition: color 0.6s ease; /* Đảm bảo màu icon và chữ chuyển mượt */
+    transition: color 0.3s ease-in-out;
 }
-
 .stats-btn:hover i, .stats-btn:hover span {
-    color: #fff; /* Màu icon và chữ khi hover */
+    color: #ffffff; /* White icon and text on hover */
 }
-
-/* CSS cho suggestion-card */
-.suggestion-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng nhẹ */
-    padding: 20px;
-    margin: 15px 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover mượt */
-    max-width: 400px; /* Giới hạn chiều rộng */
-}
-
-/* Hover cho card */
-.suggestion-card:hover {
-    transform: translateY(-5px); /* Nâng card lên khi hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Tăng bóng */
-}
-
-/* Header chứa GIF và tiêu đề */
-.suggestion-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-/* GIF của chatbot */
-.suggestion-card {
-    background: linear-gradient(135deg, #f9f9f9 0%, #e8f0fe 100%); /* Gradient nhẹ */
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Bóng đổ tinh tế */
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 450px; /* Tăng chiều rộng nhẹ */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt */
-}
-
-/* Hover cho card */
-.suggestion-card:hover {
-    transform: translateY(-8px); /* Nâng cao hơn khi hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Tăng bóng */
-}
-
-/* Header chứa GIF và tiêu đề */
-.suggestion-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-}
-
-/* Căn chỉnh text trong header */
-.header-text {
-    display: flex;
-    flex-direction: column;
-}
-
-/* GIF của chatbot */
-.suggestion-card {
-    background: linear-gradient(135deg, #f9f9f9 0%, #e8f0fe 100%); /* Gradient nhẹ */
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Bóng đổ tinh tế */
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 450px; /* Tăng chiều rộng nhẹ */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt */
-}
-
-/* Hover cho card */
-.suggestion-card:hover {
-    transform: translateY(-8px); /* Nâng cao hơn khi hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Tăng bóng */
-}
-
-/* Header chứa GIF và tiêu đề */
-.suggestion-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-}
-
-/* Căn chỉnh text trong header */
-.header-text {
-    display: flex;
-    flex-direction: column;
-}
-
-/* GIF của chatbot */
-.chatbot-gif {
-    width: 60px; /* Tăng kích thước GIF */
-    height: 60px;
-    object-fit: cover; /* Đảm bảo GIF không bị méo */
-    border-radius: 10px; /* Bo góc mềm hơn */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */
-}
-
-.chatbot-gif:hover {
-    transform: scale(1.1); /* Phóng to nhẹ khi hover */
-    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* Viền sáng xanh lá */
-}
-
-/* Tiêu đề */
-.suggestion-card h5 {
-    font-size: 1.2rem; /* Tăng kích thước chữ */
-    font-weight: 700;
-    color: #2c3e50; /* Màu tối hơn, chuyên nghiệp */
-    margin: 0;
-}
-
-/* Tiêu đề phụ */
-.suggestion-card h4 {
+/* Styles for test history */
+.test-history .history-item h6 {
     font-size: 1rem;
-    font-weight: 500;
-    color: #16a085; /* Màu xanh lá nhạt, phù hợp với chủ đề GIF */
-    margin: 2px 0 0 0;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
 }
-
-/* Nội dung gợi ý */
-.suggestion-content p {
-    font-size: 0.95rem; /* Tăng nhẹ kích thước chữ */
-    color: #34495e; /* Màu chữ đậm hơn */
-    margin-bottom: 10px;
-    line-height: 1.6; /* Tăng khoảng cách dòng */
-}
-
-/* Danh sách đề xuất */
-.suggestion-content ul {
-    list-style: none; /* Bỏ dấu đầu dòng mặc định */
-    padding: 0;
-    margin: 0 0 15px 0;
-}
-
-.suggestion-content li {
-    font-size: 0.95rem;
-    color: #34495e;
-    margin-bottom: 8px; /* Khoảng cách giữa các dòng */
-    line-height: 1.5;
-}
-
-.suggestion-content li strong {
-    color: #2c3e50; /* Màu đậm cho phần tiêu đề mỗi dòng */
-}
-
-/* Nút bắt đầu */
-.suggestion-card .btn {
-    background: linear-gradient(90deg, #007bff, #00c4b4); /* Gradient cho nút */
-    border: none;
-    padding: 10px 20px; /* Tăng kích thước nút */
-    font-size: 0.95rem;
-    font-weight: 500;
-    border-radius: 8px; /* Bo góc nút */
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.suggestion-card .btn:hover {
-    background: linear-gradient(90deg, #0056b3, #009688); /* Gradient đậm hơn */
-    transform: scale(1.1); /* Phóng to nhẹ */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Thêm bóng */
+.test-history .history-item p {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 0;
 }
